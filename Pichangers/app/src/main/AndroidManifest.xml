@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pe.edu.ulima.pichangers">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- importanteeeeeeee -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+
+        <activity
+            android:name=".login.LoginActivity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <!-- para no mostrar el action bar (los titulitos) lo de arriba-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".listaequipos.ListadoEquiposActivity"
+            android:label="Equipos"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".login.LoginActivity">
+            <!-- para que muestre la flechita para atras  lo de arribita tambien-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+        </activity>
+
+        <activity
+            android:name=".mostrarinformacion.MostrarInformacionActivity"
+            android:label="Información">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".listaequipos.ListadoEquiposActivity" />
+        </activity>
+
+        <activity
+            android:name=".listaintegrantes.ListarIntegranteActivity"
+            android:label="Escoga Integrante"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".listaequipos.ListadoEquiposActivity" />
+
+        </activity>
+
+    </application>
+
+</manifest>

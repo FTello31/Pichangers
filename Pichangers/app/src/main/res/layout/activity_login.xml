@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".login.LoginActivity"
+    android:background="@drawable/messi"
+    android:measureWithLargestChild="true">
+
+    
+    
+    <TextView
+        android:text="Pichangers"
+        android:textColor="#f5f4f4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textIsSelectable="false"
+        android:textSize="50dp"
+        android:layout_marginTop="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#d0000000"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:textColor="#f5f4f4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textIsSelectable="false"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:id="@+id/eteUsername"
+            android:textColor="#f5f4f4"
+            android:textColorHint="#f5f4f4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese usuario"
+            android:backgroundTint="#87ffffff" />
+
+
+        <EditText
+            android:id="@+id/etePassword"
+            android:textColor="#f5f4f4"
+            android:textColorHint="#f5f4f4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:hint="Ingrese contraseña"
+            android:inputType="textPassword"
+            android:backgroundTint="#87ffffff" />
+        <Button
+            android:id="@+id/butIncribirse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inscribirse"
+            android:background="#009286"
+            android:textColor="#f1eded"
+            android:layout_weight="0.22" />
+
+    </LinearLayout>
+</RelativeLayout>
